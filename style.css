@@ -11,7 +11,9 @@ html, body{
     color: white;
 }
 .container{ 
-    margin: 12%;
+    margin-top: 12%;
+    margin-left: auto;
+    margin-right: auto;
     width: 90%;
     max-width: 700px;
 }
@@ -62,4 +64,26 @@ html, body{
     padding: 16px 26px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+@media (max-width: 440px) {
+     .container h1{
+         font-size: 30px;
+     }
+     .display{
+          padding: 16px 10px;
+     }
+     .display input{
+          font-size: 18px;
+     }
+     .display img{
+          width: 20px;
+     }
+.container button{
+     font-size: 18px;
+     padding: 16px 16px;
+}
+.container button img {
+     width: 15px;
+}
 }
