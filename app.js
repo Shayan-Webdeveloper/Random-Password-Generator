@@ -16,10 +16,8 @@ btn.addEventListener("click", () => {
 for (let i = password.length; i < length; i++) {
     password += allChars[Math.floor(Math.random() * allChars.length)]
 }
-
 passwordBox.value = password;
 })
 copyIcon.addEventListener("click", () => {
-     passwordBox.select();
-     document.execCommand("copy");
-})
+     navigator.clipboard.writeText(passwordBox.value)
+});
